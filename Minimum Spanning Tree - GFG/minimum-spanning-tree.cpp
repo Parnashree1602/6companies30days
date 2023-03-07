@@ -43,6 +43,7 @@ class Solution
     }
 };
 //TC= O(ElogE)
+//SC= O(E)+O(v)
 
 //{ Driver Code Starts.
 
