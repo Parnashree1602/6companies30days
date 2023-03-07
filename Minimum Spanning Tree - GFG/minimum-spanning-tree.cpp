@@ -14,8 +14,10 @@ class Solution
         //weight,node;
         pq.push({0,0});
         int sum=0;
+        //E
         while(!pq.empty())
         {
+            //log E
             int wt=pq.top().first;
             int n=pq.top().second;
             pq.pop();
@@ -25,10 +27,12 @@ class Solution
             }
             vis[n]=1;
             sum+=wt;
+            //E
             for(auto it:adj[n])
             {
                 int node=it[0];
                 int w=it[1];
+                //log E
                 if(!vis[node])
                 {
                     pq.push({w,node});
@@ -38,6 +42,7 @@ class Solution
         return sum;
     }
 };
+//TC= O(ElogE)
 
 //{ Driver Code Starts.
 
