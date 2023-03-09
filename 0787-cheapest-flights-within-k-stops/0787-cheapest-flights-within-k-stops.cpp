@@ -38,3 +38,4 @@ public:
         return dist[dst];
     }
 };
+// TC=O(E), E=flights.size();
